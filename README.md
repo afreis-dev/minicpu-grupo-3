@@ -20,6 +20,20 @@ ser executados seguindo o guia; o trace incluído é uma execução de verifica�
 
 ## Como executar
 
+Com GCC e Make instalados, use:
+
+```sh
+make        # compila
+make run    # compila, se necessario, e executa
+make clean  # remove o executavel
+```
+
+No Windows com MinGW, o comando pode se chamar `mingw32-make`:
+use `mingw32-make`, `mingw32-make run` e `mingw32-make clean`.
+O Makefile escolhe automaticamente o nome do executável para Windows ou Linux/macOS.
+
+### Compilação manual
+
 É necessário um compilador C, como o GCC. Não há bibliotecas externas.
 Abra o terminal na pasta do projeto e compile:
 
