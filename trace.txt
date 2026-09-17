@@ -1,0 +1,162 @@
+MiniCPU - Grupo 3 - Fatorial de 5
+
+Ciclo   1: JMP 0x40        | R0=  0 R1=  0 R2=  0 R3=  0 | PC= 64 ZF=0 | MEM[0x20]=  0
+Ciclo   2: LOAD R1, 0x10   | R0=  0 R1=  5 R2=  0 R3=  0 | PC= 67 ZF=0 | MEM[0x20]=  0
+Ciclo   3: MOV R0, 1       | R0=  1 R1=  5 R2=  0 R3=  0 | PC= 70 ZF=0 | MEM[0x20]=  0
+Ciclo   4: MOV R3, 0       | R0=  1 R1=  5 R2=  0 R3=  0 | PC= 73 ZF=0 | MEM[0x20]=  0
+Ciclo   5: CMP R1, R3      | R0=  1 R1=  5 R2=  0 R3=  0 | PC= 76 ZF=0 | MEM[0x20]=  0
+Ciclo   6: JZ 0x7F         | R0=  1 R1=  5 R2=  0 R3=  0 | PC= 79 ZF=0 | MEM[0x20]=  0
+Ciclo   7: STORE R0, 0x21  | R0=  1 R1=  5 R2=  0 R3=  0 | PC= 82 ZF=0 | MEM[0x20]=  0
+Ciclo   8: MOV R0, 0       | R0=  0 R1=  5 R2=  0 R3=  0 | PC= 85 ZF=0 | MEM[0x20]=  0
+Ciclo   9: STORE R1, 0x22  | R0=  0 R1=  5 R2=  0 R3=  0 | PC= 88 ZF=0 | MEM[0x20]=  0
+Ciclo  10: LOAD R2, 0x21   | R0=  0 R1=  5 R2=  1 R3=  0 | PC= 91 ZF=0 | MEM[0x20]=  0
+Ciclo  11: ADD R0, R2      | R0=  1 R1=  5 R2=  1 R3=  0 | PC= 94 ZF=0 | MEM[0x20]=  0
+Ciclo  12: MOV R3, 1       | R0=  1 R1=  5 R2=  1 R3=  1 | PC= 97 ZF=0 | MEM[0x20]=  0
+Ciclo  13: SUB R1, R3      | R0=  1 R1=  4 R2=  1 R3=  1 | PC=100 ZF=0 | MEM[0x20]=  0
+Ciclo  14: MOV R3, 0       | R0=  1 R1=  4 R2=  1 R3=  0 | PC=103 ZF=0 | MEM[0x20]=  0
+Ciclo  15: CMP R1, R3      | R0=  1 R1=  4 R2=  1 R3=  0 | PC=106 ZF=0 | MEM[0x20]=  0
+Ciclo  16: JNZ 0x58        | R0=  1 R1=  4 R2=  1 R3=  0 | PC= 88 ZF=0 | MEM[0x20]=  0
+Ciclo  17: LOAD R2, 0x21   | R0=  1 R1=  4 R2=  1 R3=  0 | PC= 91 ZF=0 | MEM[0x20]=  0
+Ciclo  18: ADD R0, R2      | R0=  2 R1=  4 R2=  1 R3=  0 | PC= 94 ZF=0 | MEM[0x20]=  0
+Ciclo  19: MOV R3, 1       | R0=  2 R1=  4 R2=  1 R3=  1 | PC= 97 ZF=0 | MEM[0x20]=  0
+Ciclo  20: SUB R1, R3      | R0=  2 R1=  3 R2=  1 R3=  1 | PC=100 ZF=0 | MEM[0x20]=  0
+Ciclo  21: MOV R3, 0       | R0=  2 R1=  3 R2=  1 R3=  0 | PC=103 ZF=0 | MEM[0x20]=  0
+Ciclo  22: CMP R1, R3      | R0=  2 R1=  3 R2=  1 R3=  0 | PC=106 ZF=0 | MEM[0x20]=  0
+Ciclo  23: JNZ 0x58        | R0=  2 R1=  3 R2=  1 R3=  0 | PC= 88 ZF=0 | MEM[0x20]=  0
+Ciclo  24: LOAD R2, 0x21   | R0=  2 R1=  3 R2=  1 R3=  0 | PC= 91 ZF=0 | MEM[0x20]=  0
+Ciclo  25: ADD R0, R2      | R0=  3 R1=  3 R2=  1 R3=  0 | PC= 94 ZF=0 | MEM[0x20]=  0
+Ciclo  26: MOV R3, 1       | R0=  3 R1=  3 R2=  1 R3=  1 | PC= 97 ZF=0 | MEM[0x20]=  0
+Ciclo  27: SUB R1, R3      | R0=  3 R1=  2 R2=  1 R3=  1 | PC=100 ZF=0 | MEM[0x20]=  0
+Ciclo  28: MOV R3, 0       | R0=  3 R1=  2 R2=  1 R3=  0 | PC=103 ZF=0 | MEM[0x20]=  0
+Ciclo  29: CMP R1, R3      | R0=  3 R1=  2 R2=  1 R3=  0 | PC=106 ZF=0 | MEM[0x20]=  0
+Ciclo  30: JNZ 0x58        | R0=  3 R1=  2 R2=  1 R3=  0 | PC= 88 ZF=0 | MEM[0x20]=  0
+Ciclo  31: LOAD R2, 0x21   | R0=  3 R1=  2 R2=  1 R3=  0 | PC= 91 ZF=0 | MEM[0x20]=  0
+Ciclo  32: ADD R0, R2      | R0=  4 R1=  2 R2=  1 R3=  0 | PC= 94 ZF=0 | MEM[0x20]=  0
+Ciclo  33: MOV R3, 1       | R0=  4 R1=  2 R2=  1 R3=  1 | PC= 97 ZF=0 | MEM[0x20]=  0
+Ciclo  34: SUB R1, R3      | R0=  4 R1=  1 R2=  1 R3=  1 | PC=100 ZF=0 | MEM[0x20]=  0
+Ciclo  35: MOV R3, 0       | R0=  4 R1=  1 R2=  1 R3=  0 | PC=103 ZF=0 | MEM[0x20]=  0
+Ciclo  36: CMP R1, R3      | R0=  4 R1=  1 R2=  1 R3=  0 | PC=106 ZF=0 | MEM[0x20]=  0
+Ciclo  37: JNZ 0x58        | R0=  4 R1=  1 R2=  1 R3=  0 | PC= 88 ZF=0 | MEM[0x20]=  0
+Ciclo  38: LOAD R2, 0x21   | R0=  4 R1=  1 R2=  1 R3=  0 | PC= 91 ZF=0 | MEM[0x20]=  0
+Ciclo  39: ADD R0, R2      | R0=  5 R1=  1 R2=  1 R3=  0 | PC= 94 ZF=0 | MEM[0x20]=  0
+Ciclo  40: MOV R3, 1       | R0=  5 R1=  1 R2=  1 R3=  1 | PC= 97 ZF=0 | MEM[0x20]=  0
+Ciclo  41: SUB R1, R3      | R0=  5 R1=  0 R2=  1 R3=  1 | PC=100 ZF=0 | MEM[0x20]=  0
+Ciclo  42: MOV R3, 0       | R0=  5 R1=  0 R2=  1 R3=  0 | PC=103 ZF=0 | MEM[0x20]=  0
+Ciclo  43: CMP R1, R3      | R0=  5 R1=  0 R2=  1 R3=  0 | PC=106 ZF=1 | MEM[0x20]=  0
+Ciclo  44: JNZ 0x58        | R0=  5 R1=  0 R2=  1 R3=  0 | PC=109 ZF=1 | MEM[0x20]=  0
+Ciclo  45: LOAD R1, 0x22   | R0=  5 R1=  5 R2=  1 R3=  0 | PC=112 ZF=1 | MEM[0x20]=  0
+Ciclo  46: MOV R3, 1       | R0=  5 R1=  5 R2=  1 R3=  1 | PC=115 ZF=1 | MEM[0x20]=  0
+Ciclo  47: SUB R1, R3      | R0=  5 R1=  4 R2=  1 R3=  1 | PC=118 ZF=1 | MEM[0x20]=  0
+Ciclo  48: MOV R3, 0       | R0=  5 R1=  4 R2=  1 R3=  0 | PC=121 ZF=1 | MEM[0x20]=  0
+Ciclo  49: CMP R1, R3      | R0=  5 R1=  4 R2=  1 R3=  0 | PC=124 ZF=0 | MEM[0x20]=  0
+Ciclo  50: JNZ 0x4F        | R0=  5 R1=  4 R2=  1 R3=  0 | PC= 79 ZF=0 | MEM[0x20]=  0
+Ciclo  51: STORE R0, 0x21  | R0=  5 R1=  4 R2=  1 R3=  0 | PC= 82 ZF=0 | MEM[0x20]=  0
+Ciclo  52: MOV R0, 0       | R0=  0 R1=  4 R2=  1 R3=  0 | PC= 85 ZF=0 | MEM[0x20]=  0
+Ciclo  53: STORE R1, 0x22  | R0=  0 R1=  4 R2=  1 R3=  0 | PC= 88 ZF=0 | MEM[0x20]=  0
+Ciclo  54: LOAD R2, 0x21   | R0=  0 R1=  4 R2=  5 R3=  0 | PC= 91 ZF=0 | MEM[0x20]=  0
+Ciclo  55: ADD R0, R2      | R0=  5 R1=  4 R2=  5 R3=  0 | PC= 94 ZF=0 | MEM[0x20]=  0
+Ciclo  56: MOV R3, 1       | R0=  5 R1=  4 R2=  5 R3=  1 | PC= 97 ZF=0 | MEM[0x20]=  0
+Ciclo  57: SUB R1, R3      | R0=  5 R1=  3 R2=  5 R3=  1 | PC=100 ZF=0 | MEM[0x20]=  0
+Ciclo  58: MOV R3, 0       | R0=  5 R1=  3 R2=  5 R3=  0 | PC=103 ZF=0 | MEM[0x20]=  0
+Ciclo  59: CMP R1, R3      | R0=  5 R1=  3 R2=  5 R3=  0 | PC=106 ZF=0 | MEM[0x20]=  0
+Ciclo  60: JNZ 0x58        | R0=  5 R1=  3 R2=  5 R3=  0 | PC= 88 ZF=0 | MEM[0x20]=  0
+Ciclo  61: LOAD R2, 0x21   | R0=  5 R1=  3 R2=  5 R3=  0 | PC= 91 ZF=0 | MEM[0x20]=  0
+Ciclo  62: ADD R0, R2      | R0= 10 R1=  3 R2=  5 R3=  0 | PC= 94 ZF=0 | MEM[0x20]=  0
+Ciclo  63: MOV R3, 1       | R0= 10 R1=  3 R2=  5 R3=  1 | PC= 97 ZF=0 | MEM[0x20]=  0
+Ciclo  64: SUB R1, R3      | R0= 10 R1=  2 R2=  5 R3=  1 | PC=100 ZF=0 | MEM[0x20]=  0
+Ciclo  65: MOV R3, 0       | R0= 10 R1=  2 R2=  5 R3=  0 | PC=103 ZF=0 | MEM[0x20]=  0
+Ciclo  66: CMP R1, R3      | R0= 10 R1=  2 R2=  5 R3=  0 | PC=106 ZF=0 | MEM[0x20]=  0
+Ciclo  67: JNZ 0x58        | R0= 10 R1=  2 R2=  5 R3=  0 | PC= 88 ZF=0 | MEM[0x20]=  0
+Ciclo  68: LOAD R2, 0x21   | R0= 10 R1=  2 R2=  5 R3=  0 | PC= 91 ZF=0 | MEM[0x20]=  0
+Ciclo  69: ADD R0, R2      | R0= 15 R1=  2 R2=  5 R3=  0 | PC= 94 ZF=0 | MEM[0x20]=  0
+Ciclo  70: MOV R3, 1       | R0= 15 R1=  2 R2=  5 R3=  1 | PC= 97 ZF=0 | MEM[0x20]=  0
+Ciclo  71: SUB R1, R3      | R0= 15 R1=  1 R2=  5 R3=  1 | PC=100 ZF=0 | MEM[0x20]=  0
+Ciclo  72: MOV R3, 0       | R0= 15 R1=  1 R2=  5 R3=  0 | PC=103 ZF=0 | MEM[0x20]=  0
+Ciclo  73: CMP R1, R3      | R0= 15 R1=  1 R2=  5 R3=  0 | PC=106 ZF=0 | MEM[0x20]=  0
+Ciclo  74: JNZ 0x58        | R0= 15 R1=  1 R2=  5 R3=  0 | PC= 88 ZF=0 | MEM[0x20]=  0
+Ciclo  75: LOAD R2, 0x21   | R0= 15 R1=  1 R2=  5 R3=  0 | PC= 91 ZF=0 | MEM[0x20]=  0
+Ciclo  76: ADD R0, R2      | R0= 20 R1=  1 R2=  5 R3=  0 | PC= 94 ZF=0 | MEM[0x20]=  0
+Ciclo  77: MOV R3, 1       | R0= 20 R1=  1 R2=  5 R3=  1 | PC= 97 ZF=0 | MEM[0x20]=  0
+Ciclo  78: SUB R1, R3      | R0= 20 R1=  0 R2=  5 R3=  1 | PC=100 ZF=0 | MEM[0x20]=  0
+Ciclo  79: MOV R3, 0       | R0= 20 R1=  0 R2=  5 R3=  0 | PC=103 ZF=0 | MEM[0x20]=  0
+Ciclo  80: CMP R1, R3      | R0= 20 R1=  0 R2=  5 R3=  0 | PC=106 ZF=1 | MEM[0x20]=  0
+Ciclo  81: JNZ 0x58        | R0= 20 R1=  0 R2=  5 R3=  0 | PC=109 ZF=1 | MEM[0x20]=  0
+Ciclo  82: LOAD R1, 0x22   | R0= 20 R1=  4 R2=  5 R3=  0 | PC=112 ZF=1 | MEM[0x20]=  0
+Ciclo  83: MOV R3, 1       | R0= 20 R1=  4 R2=  5 R3=  1 | PC=115 ZF=1 | MEM[0x20]=  0
+Ciclo  84: SUB R1, R3      | R0= 20 R1=  3 R2=  5 R3=  1 | PC=118 ZF=1 | MEM[0x20]=  0
+Ciclo  85: MOV R3, 0       | R0= 20 R1=  3 R2=  5 R3=  0 | PC=121 ZF=1 | MEM[0x20]=  0
+Ciclo  86: CMP R1, R3      | R0= 20 R1=  3 R2=  5 R3=  0 | PC=124 ZF=0 | MEM[0x20]=  0
+Ciclo  87: JNZ 0x4F        | R0= 20 R1=  3 R2=  5 R3=  0 | PC= 79 ZF=0 | MEM[0x20]=  0
+Ciclo  88: STORE R0, 0x21  | R0= 20 R1=  3 R2=  5 R3=  0 | PC= 82 ZF=0 | MEM[0x20]=  0
+Ciclo  89: MOV R0, 0       | R0=  0 R1=  3 R2=  5 R3=  0 | PC= 85 ZF=0 | MEM[0x20]=  0
+Ciclo  90: STORE R1, 0x22  | R0=  0 R1=  3 R2=  5 R3=  0 | PC= 88 ZF=0 | MEM[0x20]=  0
+Ciclo  91: LOAD R2, 0x21   | R0=  0 R1=  3 R2= 20 R3=  0 | PC= 91 ZF=0 | MEM[0x20]=  0
+Ciclo  92: ADD R0, R2      | R0= 20 R1=  3 R2= 20 R3=  0 | PC= 94 ZF=0 | MEM[0x20]=  0
+Ciclo  93: MOV R3, 1       | R0= 20 R1=  3 R2= 20 R3=  1 | PC= 97 ZF=0 | MEM[0x20]=  0
+Ciclo  94: SUB R1, R3      | R0= 20 R1=  2 R2= 20 R3=  1 | PC=100 ZF=0 | MEM[0x20]=  0
+Ciclo  95: MOV R3, 0       | R0= 20 R1=  2 R2= 20 R3=  0 | PC=103 ZF=0 | MEM[0x20]=  0
+Ciclo  96: CMP R1, R3      | R0= 20 R1=  2 R2= 20 R3=  0 | PC=106 ZF=0 | MEM[0x20]=  0
+Ciclo  97: JNZ 0x58        | R0= 20 R1=  2 R2= 20 R3=  0 | PC= 88 ZF=0 | MEM[0x20]=  0
+Ciclo  98: LOAD R2, 0x21   | R0= 20 R1=  2 R2= 20 R3=  0 | PC= 91 ZF=0 | MEM[0x20]=  0
+Ciclo  99: ADD R0, R2      | R0= 40 R1=  2 R2= 20 R3=  0 | PC= 94 ZF=0 | MEM[0x20]=  0
+Ciclo 100: MOV R3, 1       | R0= 40 R1=  2 R2= 20 R3=  1 | PC= 97 ZF=0 | MEM[0x20]=  0
+Ciclo 101: SUB R1, R3      | R0= 40 R1=  1 R2= 20 R3=  1 | PC=100 ZF=0 | MEM[0x20]=  0
+Ciclo 102: MOV R3, 0       | R0= 40 R1=  1 R2= 20 R3=  0 | PC=103 ZF=0 | MEM[0x20]=  0
+Ciclo 103: CMP R1, R3      | R0= 40 R1=  1 R2= 20 R3=  0 | PC=106 ZF=0 | MEM[0x20]=  0
+Ciclo 104: JNZ 0x58        | R0= 40 R1=  1 R2= 20 R3=  0 | PC= 88 ZF=0 | MEM[0x20]=  0
+Ciclo 105: LOAD R2, 0x21   | R0= 40 R1=  1 R2= 20 R3=  0 | PC= 91 ZF=0 | MEM[0x20]=  0
+Ciclo 106: ADD R0, R2      | R0= 60 R1=  1 R2= 20 R3=  0 | PC= 94 ZF=0 | MEM[0x20]=  0
+Ciclo 107: MOV R3, 1       | R0= 60 R1=  1 R2= 20 R3=  1 | PC= 97 ZF=0 | MEM[0x20]=  0
+Ciclo 108: SUB R1, R3      | R0= 60 R1=  0 R2= 20 R3=  1 | PC=100 ZF=0 | MEM[0x20]=  0
+Ciclo 109: MOV R3, 0       | R0= 60 R1=  0 R2= 20 R3=  0 | PC=103 ZF=0 | MEM[0x20]=  0
+Ciclo 110: CMP R1, R3      | R0= 60 R1=  0 R2= 20 R3=  0 | PC=106 ZF=1 | MEM[0x20]=  0
+Ciclo 111: JNZ 0x58        | R0= 60 R1=  0 R2= 20 R3=  0 | PC=109 ZF=1 | MEM[0x20]=  0
+Ciclo 112: LOAD R1, 0x22   | R0= 60 R1=  3 R2= 20 R3=  0 | PC=112 ZF=1 | MEM[0x20]=  0
+Ciclo 113: MOV R3, 1       | R0= 60 R1=  3 R2= 20 R3=  1 | PC=115 ZF=1 | MEM[0x20]=  0
+Ciclo 114: SUB R1, R3      | R0= 60 R1=  2 R2= 20 R3=  1 | PC=118 ZF=1 | MEM[0x20]=  0
+Ciclo 115: MOV R3, 0       | R0= 60 R1=  2 R2= 20 R3=  0 | PC=121 ZF=1 | MEM[0x20]=  0
+Ciclo 116: CMP R1, R3      | R0= 60 R1=  2 R2= 20 R3=  0 | PC=124 ZF=0 | MEM[0x20]=  0
+Ciclo 117: JNZ 0x4F        | R0= 60 R1=  2 R2= 20 R3=  0 | PC= 79 ZF=0 | MEM[0x20]=  0
+Ciclo 118: STORE R0, 0x21  | R0= 60 R1=  2 R2= 20 R3=  0 | PC= 82 ZF=0 | MEM[0x20]=  0
+Ciclo 119: MOV R0, 0       | R0=  0 R1=  2 R2= 20 R3=  0 | PC= 85 ZF=0 | MEM[0x20]=  0
+Ciclo 120: STORE R1, 0x22  | R0=  0 R1=  2 R2= 20 R3=  0 | PC= 88 ZF=0 | MEM[0x20]=  0
+Ciclo 121: LOAD R2, 0x21   | R0=  0 R1=  2 R2= 60 R3=  0 | PC= 91 ZF=0 | MEM[0x20]=  0
+Ciclo 122: ADD R0, R2      | R0= 60 R1=  2 R2= 60 R3=  0 | PC= 94 ZF=0 | MEM[0x20]=  0
+Ciclo 123: MOV R3, 1       | R0= 60 R1=  2 R2= 60 R3=  1 | PC= 97 ZF=0 | MEM[0x20]=  0
+Ciclo 124: SUB R1, R3      | R0= 60 R1=  1 R2= 60 R3=  1 | PC=100 ZF=0 | MEM[0x20]=  0
+Ciclo 125: MOV R3, 0       | R0= 60 R1=  1 R2= 60 R3=  0 | PC=103 ZF=0 | MEM[0x20]=  0
+Ciclo 126: CMP R1, R3      | R0= 60 R1=  1 R2= 60 R3=  0 | PC=106 ZF=0 | MEM[0x20]=  0
+Ciclo 127: JNZ 0x58        | R0= 60 R1=  1 R2= 60 R3=  0 | PC= 88 ZF=0 | MEM[0x20]=  0
+Ciclo 128: LOAD R2, 0x21   | R0= 60 R1=  1 R2= 60 R3=  0 | PC= 91 ZF=0 | MEM[0x20]=  0
+Ciclo 129: ADD R0, R2      | R0=120 R1=  1 R2= 60 R3=  0 | PC= 94 ZF=0 | MEM[0x20]=  0
+Ciclo 130: MOV R3, 1       | R0=120 R1=  1 R2= 60 R3=  1 | PC= 97 ZF=0 | MEM[0x20]=  0
+Ciclo 131: SUB R1, R3      | R0=120 R1=  0 R2= 60 R3=  1 | PC=100 ZF=0 | MEM[0x20]=  0
+Ciclo 132: MOV R3, 0       | R0=120 R1=  0 R2= 60 R3=  0 | PC=103 ZF=0 | MEM[0x20]=  0
+Ciclo 133: CMP R1, R3      | R0=120 R1=  0 R2= 60 R3=  0 | PC=106 ZF=1 | MEM[0x20]=  0
+Ciclo 134: JNZ 0x58        | R0=120 R1=  0 R2= 60 R3=  0 | PC=109 ZF=1 | MEM[0x20]=  0
+Ciclo 135: LOAD R1, 0x22   | R0=120 R1=  2 R2= 60 R3=  0 | PC=112 ZF=1 | MEM[0x20]=  0
+Ciclo 136: MOV R3, 1       | R0=120 R1=  2 R2= 60 R3=  1 | PC=115 ZF=1 | MEM[0x20]=  0
+Ciclo 137: SUB R1, R3      | R0=120 R1=  1 R2= 60 R3=  1 | PC=118 ZF=1 | MEM[0x20]=  0
+Ciclo 138: MOV R3, 0       | R0=120 R1=  1 R2= 60 R3=  0 | PC=121 ZF=1 | MEM[0x20]=  0
+Ciclo 139: CMP R1, R3      | R0=120 R1=  1 R2= 60 R3=  0 | PC=124 ZF=0 | MEM[0x20]=  0
+Ciclo 140: JNZ 0x4F        | R0=120 R1=  1 R2= 60 R3=  0 | PC= 79 ZF=0 | MEM[0x20]=  0
+Ciclo 141: STORE R0, 0x21  | R0=120 R1=  1 R2= 60 R3=  0 | PC= 82 ZF=0 | MEM[0x20]=  0
+Ciclo 142: MOV R0, 0       | R0=  0 R1=  1 R2= 60 R3=  0 | PC= 85 ZF=0 | MEM[0x20]=  0
+Ciclo 143: STORE R1, 0x22  | R0=  0 R1=  1 R2= 60 R3=  0 | PC= 88 ZF=0 | MEM[0x20]=  0
+Ciclo 144: LOAD R2, 0x21   | R0=  0 R1=  1 R2=120 R3=  0 | PC= 91 ZF=0 | MEM[0x20]=  0
+Ciclo 145: ADD R0, R2      | R0=120 R1=  1 R2=120 R3=  0 | PC= 94 ZF=0 | MEM[0x20]=  0
+Ciclo 146: MOV R3, 1       | R0=120 R1=  1 R2=120 R3=  1 | PC= 97 ZF=0 | MEM[0x20]=  0
+Ciclo 147: SUB R1, R3      | R0=120 R1=  0 R2=120 R3=  1 | PC=100 ZF=0 | MEM[0x20]=  0
+Ciclo 148: MOV R3, 0       | R0=120 R1=  0 R2=120 R3=  0 | PC=103 ZF=0 | MEM[0x20]=  0
+Ciclo 149: CMP R1, R3      | R0=120 R1=  0 R2=120 R3=  0 | PC=106 ZF=1 | MEM[0x20]=  0
+Ciclo 150: JNZ 0x58        | R0=120 R1=  0 R2=120 R3=  0 | PC=109 ZF=1 | MEM[0x20]=  0
+Ciclo 151: LOAD R1, 0x22   | R0=120 R1=  1 R2=120 R3=  0 | PC=112 ZF=1 | MEM[0x20]=  0
+Ciclo 152: MOV R3, 1       | R0=120 R1=  1 R2=120 R3=  1 | PC=115 ZF=1 | MEM[0x20]=  0
+Ciclo 153: SUB R1, R3      | R0=120 R1=  0 R2=120 R3=  1 | PC=118 ZF=1 | MEM[0x20]=  0
+Ciclo 154: MOV R3, 0       | R0=120 R1=  0 R2=120 R3=  0 | PC=121 ZF=1 | MEM[0x20]=  0
+Ciclo 155: CMP R1, R3      | R0=120 R1=  0 R2=120 R3=  0 | PC=124 ZF=1 | MEM[0x20]=  0
+Ciclo 156: JNZ 0x4F        | R0=120 R1=  0 R2=120 R3=  0 | PC=127 ZF=1 | MEM[0x20]=  0
+Ciclo 157: STORE R0, 0x20  | R0=120 R1=  0 R2=120 R3=  0 | PC=130 ZF=1 | MEM[0x20]=120
+Ciclo 158: HALT            | R0=120 R1=  0 R2=120 R3=  0 | PC=133 ZF=1 | MEM[0x20]=120
+
+Resultado: 5! = 120 (MEM[0x20])

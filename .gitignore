@@ -1,0 +1,4 @@
+*.exe
+*.o
+minicpu
+__pycache__/
